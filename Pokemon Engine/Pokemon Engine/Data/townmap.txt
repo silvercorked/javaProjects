@@ -1,0 +1,30 @@
+# ------------------------------------------------------
+# Pokemon: Metallic Silver Map
+# ------------------------------------------------------
+# Flameguru
+# Includes Johto, Kanto, and Orange Islands Maps
+# ------------------------------------------------------
+[0]
+Name=JOHTO
+Filename=map.png
+Point=22,12,"NEWBARK TOWN",,,,,
+Point=15,12,"CHERRYGROVE CITY",,,,,
+Point=13,6,"VIOLET CITY","SPROUT TOWER",,,,
+Point=12,8,,"RUINS OF ALPH",,,,
+Point=12,15,,"UNION CAVE",,,,
+Point=10,15,,"SLOWPOKE WELL",,,,
+Point=9,15,"AZALEA TOWN",,,,,
+Point=7,15,,"ILEX FOREST",,,,
+Point=7,9,"GOLDENROD CITY",,,,,
+Point=7,6,,"NATIONAL PARK",,,,
+Point=11,4,"ECRUTEAK CITY",,,,,
+Point=4,6,"OLIVINE CITY",,,,,
+Point=3,9,,"WHIRL ISLANDS",,,,
+Point=2,12,"CIANWOOD CITY",,,,,
+Point=13,4,,"MT. MORTAR",,,,
+Point=16,4,"MAHOGANY TOWN",,,,,
+Point=16,2,,"LAKE OF RAGE",,,,
+Point=19,4,,"ICE PATH",,,,
+Point=20,4,"BLACKTHORN CITY","DRAGON''S DEN",,,,
+Point=24,12,,"TOHJO FALLS",,,,
+Point=23,7,,"MT. SILVER",,,,

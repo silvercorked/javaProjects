@@ -1,0 +1,1 @@
+convert full.png -crop 32x32 tiles.png

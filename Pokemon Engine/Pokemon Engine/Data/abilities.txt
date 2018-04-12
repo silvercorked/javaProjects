@@ -1,0 +1,79 @@
+# This file contains the text for each ability in the game.  The game system
+# doesn't support adding or changing the abilities in this list. 
+1,STENCH,STENCH,Helps repel wild POKÈMON.
+2,DRIZZLE,DRIZZLE,Summons rain in battle.
+3,SPEEDBOOST,SPEED BOOST,Gradually boosts SPEED.
+4,BATTLEARMOR,BATTLE ARMOR,Blocks critical hits.
+5,STURDY,STURDY,Negates 1-hit KO attacks.
+6,DAMP,DAMP,Prevents self-destruction.
+7,LIMBER,LIMBER,Prevents paralysis.
+8,SANDVEIL,SAND VEIL,Ups evasion in a sandstorm.
+9,STATIC,STATIC,Paralyzes on contact.
+10,VOLTABSORB,VOLT ABSORB,Turns electricity into HP.
+11,WATERABSORB,WATER ABSORB,Changes water into HP.
+12,OBLIVIOUS,OBLIVIOUS,Prevents attraction.
+13,CLOUDNINE,CLOUD NINE,Negates weather effects.
+14,COMPOUNDEYES,COMPOUNDEYES,Raises accuracy.
+15,INSOMNIA,INSOMNIA,Prevents sleep.
+16,COLORCHANGE,COLOR CHANGE,Changes type to foe's move.
+17,IMMUNITY,IMMUNITY,Prevents poisoning.
+18,FLASHFIRE,FLASH FIRE,Powers up if hit by fire.
+19,SHIELDDUST,SHIELD DUST,Prevents added effects.
+20,OWNTEMPO,OWN TEMPO,Prevents confusion.
+21,SUCTIONCUPS,SUCTION CUPS,Firmly anchors the body.
+22,INTIMIDATE,INTIMIDATE,Lowers the foe's ATTACK.
+23,SHADOWTAG,SHADOW TAG,Prevents the foe's escape.
+24,ROUGHSKIN,ROUGH SKIN,Hurts to touch.
+25,WONDERGUARD,WONDER GUARD,\"Super effective\'' hits.
+26,LEVITATE,LEVITATE,Not hit by GROUND attacks.
+27,EFFECTSPORE,EFFECT SPORE,Leaves spores on contact.
+28,SYNCHRONIZE,SYNCHRONIZE,Passes on status problems.
+29,CLEARBODY,CLEAR BODY,Prevents ability reduction.
+30,NATURALCURE,NATURAL CURE,Heals upon switching out.
+31,LIGHTNINGROD,LIGHTNINGROD,Draws electrical moves.
+32,SERENEGRACE,SERENE GRACE,Promotes added effects.
+33,SWIFTSWIM,SWIFT SWIM,Raises SPEED in rain.
+34,CHLOROPHYLL,CHLOROPHYLL,Raises SPEED in sunshine.
+35,ILLUMINATE,ILLUMINATE,Encounter rate increases.
+36,TRACE,TRACE,Copies special ability.
+37,HUGEPOWER,HUGE POWER,Raises ATTACK.
+38,POISONPOINT,POISON POINT,Poisons foe on contact.
+39,INNERFOCUS,INNER FOCUS,Prevents flinching.
+40,MAGMAARMOR,MAGMA ARMOR,Prevents freezing.
+41,WATERVEIL,WATER VEIL,Prevents burns.
+42,MAGNETPULL,MAGNET PULL,Traps STEEL-type POKÈMON.
+43,SOUNDPROOF,SOUNDPROOF,Avoids sound-based moves.
+44,RAINDISH,RAIN DISH,Slight HP recovery in rain.
+45,SANDSTREAM,SAND STREAM,Summons a sandstorm.
+46,PRESSURE,PRESSURE,Raises foe's PP usage.
+47,THICKFAT,THICK FAT,Heat-and-cold protection.
+48,EARLYBIRD,EARLY BIRD,Awakens quickly from sleep.
+49,FLAMEBODY,FLAME BODY,Burns the foe on contact.
+50,RUNAWAY,RUN AWAY,Makes escaping easier.
+51,KEENEYE,KEEN EYE,Prevents loss of accuracy.
+52,HYPERCUTTER,HYPER CUTTER,Prevents ATTACK reduction.
+53,PICKUP,PICKUP,May pick up items.
+54,TRUANT,TRUANT,Moves only every two turns.
+55,HUSTLE,HUSTLE,Trades accuracy for power.
+56,CUTECHARM,CUTE CHARM,Infatuates on contact.
+57,PLUS,PLUS,Powers up with MINUS.
+58,MINUS,MINUS,Powers up with PLUS.
+59,FORECAST,FORECAST,Changes with the weather.
+60,STICKYHOLD,STICKY HOLD,Prevents item theft.
+61,SHEDSKIN,SHED SKIN,Heals the body by shedding.
+62,GUTS,GUTS,Ups ATTACK if suffering.
+63,MARVELSCALE,MARVEL SCALE,Ups DEFENSE if suffering.
+64,LIQUIDOOZE,LIQUID OOZE,Draining causes injury.
+65,OVERGROW,OVERGROW,Ups GRASS moves in a pinch.
+66,BLAZE,BLAZE,Ups FIRE moves in a pinch.
+67,TORRENT,TORRENT,Ups WATER moves in a pinch.
+68,SWARM,SWARM,Ups BUG moves in a pinch.
+69,ROCKHEAD,ROCK HEAD,Prevents recoil damage.
+70,DROUGHT,DROUGHT,Summons sunlight in battle.
+71,ARENATRAP,ARENA TRAP,Prevents fleeing.
+72,VITALSPIRIT,VITAL SPIRIT,Prevents sleep.
+73,WHITESMOKE,WHITE SMOKE,Prevents ability reduction.
+74,PUREPOWER,PURE POWER,Raises ATTACK.
+75,SHELLARMOR,SHELL ARMOR,Blocks critical hits.
+76,CACOPHONY,CACOPHONY,Avoids sound-based moves.
+77,AIRLOCK,AIR LOCK,Negates weather effects.
