@@ -1,0 +1,16 @@
+package org.wissing.CharacterRandomization;
+
+public abstract class Classes {
+	public int getStrength();
+	public int getDex();
+	public int getCon();
+	public int getInt();
+	public int getWisdom();
+	public int getChar();
+	public int setStrength();
+	public int setDex();
+	public int setCon();
+	public int setInt();
+	public int setWisdom();
+	public int setChar();
+}

@@ -1,0 +1,8 @@
+package org.wissing.CharacterRandomization;
+
+public class DragonBorn extends Classes {
+	
+	public DragonBorn(String r, String c, String bg, String a, int[] st){
+		
+	}
+}

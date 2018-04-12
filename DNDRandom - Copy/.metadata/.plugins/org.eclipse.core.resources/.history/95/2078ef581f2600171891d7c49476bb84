@@ -1,0 +1,9 @@
+package org.wissing.CharacterRandomization;
+
+public class Tiefling {
+	
+	public Tiefling(String r, String c, String bg, String a, int[] st){
+		Statistics = st;
+		this.printStats();
+	}
+}

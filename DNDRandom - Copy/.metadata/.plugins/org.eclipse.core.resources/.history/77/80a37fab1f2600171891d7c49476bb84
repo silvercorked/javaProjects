@@ -1,0 +1,9 @@
+package org.wissing.CharacterRandomization;
+
+public class HalfElf extends Classes {
+	
+	public HalfElf(String r, String c, String bg, String a, int[] st){
+		Statistics = st;
+		this.printStats();
+	}
+}

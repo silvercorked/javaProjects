@@ -1,0 +1,43 @@
+package org.wissing.CharacterRandomization;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		randomizer alex = new randomizer();
+		
+		String r = alex.getRace();
+		String c = alex.getClasss();
+		String bg = alex.getBG();
+		String a = alex.getAlign();
+		int[] st = alex.getStatistics();
+		if(r.contains("Dwarf")){
+			Dwarf b = new Dwarf(r,c,bg,a,st);
+		}
+		else if(r.contains("Elf")){
+			Elf k = new Elf(r,c,bg,a,st);
+		}
+		else if(r.contains("Halfling")){
+			Halfling d = new Halfling(r,c,bg,a,st);
+		}
+		else if(r.contains("Human")){
+			Human e = new Human(r,c,bg,a,st);
+		}
+		else if(r.contains("Dragonborn")){
+			DragonBorn f = new DragonBorn(r,c,bg,a,st);
+		}
+		else if(r.contains("Gnome")){
+			Gnome g = new Gnome(r,c,bg,a,st);
+		}
+		else if(r.contains("Half-Elf")){
+			HalfElf h = new HalfElf(r,c,bg,a,st);
+		}
+		else if(r.contains("Half-Orc")){
+			HalfOrc i = new HalfOrc(r,c,bg,a,st);
+		}
+		else if(r.contains("Tiefling")){
+			Tiefling j = new Tiefling(r,c,bg,a,st);
+		}
+
+	}
+
+}

@@ -1,0 +1,348 @@
+package org.wissing.CharacterRandomization;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Random;
+
+public class randomizer {
+	private String r;
+	private String c;
+	private String bg;
+	private String align;
+	private int[] statistics;
+	private String[] raceNames = {"Dwarf","Elf","Halfling","Gnome","DragonBorn","Human","Half-Elf","Half-Orc","Tiefling"};
+	private String[] classNames = {"Barbarian","Bard","Cleric","Druid","Fighter","Monk","Paladin","Ranger","Rogue","Sorcerer","Warlock","Wizard"};
+	private String[] bgNames = {"Acolyte","Charaltan","Criminal","Entertainer","Folk Hero","Guild Artisan","Hermit","Noble","Outlander","Sage","Sailor","Soldier","Urchin",};
+	private Random rand;
+	
+	public randomizer(){
+		rand = new Random();
+		statistics = stats();
+		r = race();
+		c = classes();
+		bg = background();
+		align = alignment();
+	}
+	public int[] stats(){
+		int[] stats = {stat(),stat(),stat(),stat(),stat(),stat()};
+		return stats;
+	}
+	public String race(){
+		int ran = rand.nextInt(9);
+		String Race = raceNames[ran];
+		if(ran <= 3){
+			return getSubRace(Race);
+		}
+		return Race;
+	}
+	public String getSubRace(String x){
+		String subRace = null;
+		if(x == "Dwarf"){
+			String[] all = {"Hill","Mountain"};
+			subRace = all[rand.nextInt(2)];
+		}
+		else if(x == "Elf"){
+			String[] all = {"High","Wood","Drow"};
+			subRace = all[rand.nextInt(3)];
+		}
+		else if(x == "Halfling"){
+			String[] all = {"Lightfoot","Stout"};
+			subRace = all[rand.nextInt(2)];
+		}
+		else if(x == "Gnome"){
+			String[] all = {"Forest","Rock"};
+			subRace = all[rand.nextInt(2)];
+		}
+		return subRace + " " + x;
+	}
+	public String classes(){
+		String classs = classNames[12];
+		return getSubClass(classs) + " " + classs;
+	}
+	public String getSubClass(String x){
+		switch(x){
+			case "Barbarian": 
+				String[] a = {"Path of the Berserker", "Path of the Totem Warrior"};
+				return a[rand.nextInt(2)];
+			case "Bard":
+				String[] b = {"College of Lore", "College of Valor"};
+				return b[rand.nextInt(2)];
+			case "Cleric":
+				String[] c = {"Knowledge Domain", "Life Domain", "Light Domain", "Luck Domain", "Nature Domain", "Tempest Domain", "Trickery Domain", "War Domain"};
+				return c[rand.nextInt(8)];
+			case "Druid":
+				String[] d = {"Circle of the Beast", "Circle of the Land","Circle of the Moon"};
+				return d[rand.nextInt(3)];
+			case "Fighter":
+				String[] e = {"Champion","Battle Master","Eldritch Knight"};
+				return e[rand.nextInt(3)];
+			case "Monk":
+				String[] f = {"Way of the Open Hand", "Way of Shadow", "Way of Four Elements"};
+				return f[rand.nextInt(3)];
+			case "Paladin":
+				String[] g = {"Oath of Devotion", "Oath of Ancients", "Oath of Vengeance"};
+				return g[rand.nextInt(3)];
+			case "Ranger":
+				String[] h = {"Hunter", "Beast Master"};
+				return h[rand.nextInt(2)];
+			case "Rogue":
+				String[] i = {"Theif","Assassin","Arcane Trickster"};
+				return i[rand.nextInt(3)];
+			case "Sorcerer":
+				String[] j = {"Draconic Bloodline","Wild Magic"};
+				return j[rand.nextInt(2)];
+			case "Warlock":
+				String[] k = {"Pact of the Archfey","Pact of the Fiend","Pact of the Great Old One"};
+				return k[rand.nextInt(3)];
+			case "Wizard":
+				String[] l = {"School of Abjuration", "School of Divination", "School of Enchantment", "School of Evocation", "School of Illusion", "School of Necromancy", "School of Transmutation"};
+				return l[rand.nextInt(7)];
+			default: return "Something messed up in subclass";
+		}
+	}
+	public String background(){
+		return bgNames[rand.nextInt(13)];
+	}
+	private int stat(){
+		int a = rand.nextInt(5) + 1;
+		int b = rand.nextInt(5) + 1;
+		int c = rand.nextInt(5) + 1;
+		int d = rand.nextInt(5) + 1;
+		int e = rand.nextInt(5) + 1;
+		ArrayList<Integer> all = new ArrayList<Integer>();
+		all.add(a);all.add(b);all.add(c);all.add(d);all.add(e);
+		int sum = 0;
+		for(int i = 0; i < 3; i++){
+			sum += Collections.max(all);
+			all.remove(Collections.max(all));
+		}
+		return sum;
+	}
+	public String alignment(){
+		String[] a = {"Good", "Evil", "Neutral"};
+		String[] b = {"Lawful", "Chaotic", "Neutral"};
+		return a[rand.nextInt(3)] + " " + b[rand.nextInt(3)];
+	}
+	public String getClasss(){return c;}
+	public String getRace(){return r;}
+	public String getBG(){return bg;}
+	public String getAlign(){return align;}
+	public int[] getStatistics(){return statistics;}
+
+}
+/**Please fill out the schedualing chart -  https://docs.google.com/spreadsheets/d/11PBCQI05iBkSx85p5W_SdoV0v9t_66b9vZgwVwidDg4/edit?usp=sharing
+
+Other resources - https://dnd.rem.uz/ 
+Contains - everything else
+
+* - denotes Unearthed Arcana Material (please leave a note to the title of the edition.)
+^ - denotes Sword Coast Adventures guide
+g - denotes 3rd party
+Races-
+Dwarf
+Hill
+Mountain
+^Shield
+^Gold 
+^Grey
+Elf
+High (^Sun)(^Moon)
+Wood (^Wood)
+Dark (aka Drow)(^Dark)
+Halfling
+Lightfoot
+Stout(^Strongheart)
+Human
+Dragonborn
+Gnome
+Forest
+Rock
+^Deep (aka Svirfneblin)
+Half-Elf
+Half-Orc
+Tiefling
+*Tiefling(That Old Black Magic)
+Infernal
+Abyssal
+*Revenaut(Gothic Heroes)
+Is a possible sub race for everything
+Volos-
+Aasimar
+Protector
+Scourge
+Fallen
+Firbolgs
+Goliaths
+Kenku
+Lizardfolk
+Tabaxi
+Tritons
+Monstrous Races-
+Bug-Bear
+Goblin
+Hobgoblin
+Kobold
+Orc
+Yuan-ti Pureblood
+*Minotaur(Waterborn)
+
+Classes-
+Barbarian
+Path of the Berserker
+gPath of the Rage Mage
+Path of the Totem Warrior(^)
+^Path of the BattleRager
+*Path of the Ancestral Guardian(Barbarian)
+*Path of the Storm Herald(Barbarian)
+*Path of the Zelot(Barbarian)
+Bard
+College of Lore(^College of Fochlucan, New Olamn, and the Herald)
+gCollege of Masks
+College of Valor
+*College of Swords(Kits of Old)
+*College of Satire(Kits of Old)
+*College of Glamour(Bard)
+*College of Whispers(Bard)
+
+Cleric
+Knowledge Domain
+Life Domain
+Light Domain
+Luck Domain
+Nature Domain
+Tempest Domain
+Trickery Domain
+War Domain
+^Arcana Domain
+*Forge Domain(Cleric)
+*Grave Domain(Cleric)
+*Protection Domain(Cleric)
+Druid
+gCircle of the Beast
+Circle of the Land (^Circle of Swords, Emerald Enclave, Moonshea Circles)
+Circle of the Moon (^Circle of Swords, Emerald Enclave, Moonshea Circles)
+*Circle of Dreams(Druid)
+*Circle of The Shepard(Druid)
+*Circle of Twilight(Druid)
+Fighter
+Champion
+Battle Master
+Eldritch Knight
+gKensai
+^Purple Dragon Knight
+*Cavalier(Kits of Old)
+*Scout(Kits of Old)
+*Arcane Archer(Fighter)
+*Knight(Fighter)
+*Samurai(Fighter)
+*SharpShooter(Fighter)
+*Monster Hunter(Gothic Heros)
+Monk
+Way of the Open Hand (^The Hin Fist, Yellow Rose)
+Way of Shadow (^The Dark Moon)
+Way of Four Elements
+*Way of the Drunken Monk(Trio)
+^Way of the Long Death
+^Way of the Sun Soul
+*Way of the Kensei(Monk)
+*Way of Tranquility(Monk)
+Paladin
+Oath of Devotion(^Order of the Companion, Gilded Eye)
+Oath of Ancients
+Oath of Vengeance(^Order of the Gilded Eye)
+gOath of Inquisition
+^Oath of the Crown
+*Oath of Conquest(Paladin)
+*Oath of Treachery(Paladin)
+*Oath of Redemption(Trio)
+(Old)Ranger
+Hunter
+Beast Master
+*(Revised)Ranger
+Beast Conclave
+Hunter Conclave
+Deep Stalker
+Horizon Walker(Ranger & is Rouge)
+Primeval Guardian(Ranger & Rouge)
+Monster Slayer(Trio)
+Rogue
+Thief
+Assassin
+*Ghost Killer
+Arcane Trickster
+^MasterMind
+^*SwashBuckler(Waterborn)
+*Scout(Ranger & Rouge)
+*Inquizitive(Gothic Heros)
+Sorcerer
+*Blue Magic
+Draconic Bloodline
+Wild Magic
+^*Storm Sorcery(Waterborn)
+*Shadow(UnderDark)
+*Favored Soul(Sorcerer)
+*Phoenix Sorcery(Sorcerer)
+*Sea Sorcery(Sorcery)
+*Stone Sorcery(Sorcerer)
+Warlock
+Pact of the Archfey
+Pact of the Fiend
+Path of the Great Old One
+*Pact of the Skin
+^The Undying
+*The Undying Light(UnderDark)
+*Hexblade(Warlock & Wizard)
+*The Raven Queen(Warlock & Wizard)
+*Pact of The Seeker(The Faithful)
+Wizard
+School of Abjuration
+School of Divination
+School of Enchantment
+School of Evocation
+School of Illusion
+School of Necromancy
+School of Transmutation
+^BladeSinging
+*Lore Master(Warlock & Wizard)
+*Theurgy(The Faithful)(Wizard Revisited)
+*War Magic(Wizard Revisited)
+*Artificer
+Alchemist
+Gunsmith
+*The Mystic(The Mystic Class)
+Order of the Avatar
+Order of the Awakened
+Order of the Immortal
+Order of the Nomad
+Order of the Soul Knife
+Order of the Wu Jen
+
+Backgrounds-
+Acolyte
+Charaltan
+Criminal
+Entertainer
+Folk Hero
+Guild Artisan
+Hermit
+Noble
+Outlander
+Sage
+Sailor
+Soldier
+Urchin
+^City Watch
+^Clan Crafter
+^Cloistered Scholar
+^Courtier
+^Faction Agent
+^Far Traveler
+^Inheritor
+^Knight of the Order
+^Mercenary Veteran
+^Urban Bounty Hunter
+^Uthgardt Tribe Member
+^Waterdhavian Noble
+
+
+*/

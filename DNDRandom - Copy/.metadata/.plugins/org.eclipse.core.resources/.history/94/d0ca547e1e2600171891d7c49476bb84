@@ -1,0 +1,50 @@
+package org.wissing.CharacterRandomization;
+
+public abstract class Classes {
+	private int Strength;
+	private int Dexterity;
+	private int Constitution;
+	private int Intelligence;
+	private int Wisdom;
+	private int Charisma;
+	private int[] Statistics = new int[6];
+	public int getStrength(){
+		return Strength;
+	}
+	public int getDex(){
+		return Dexterity;
+	}
+	public int getCon(){
+		return Constitution;
+	}
+	public int getInt(){
+		return Intelligence;
+	}
+	public int getWisdom(){
+		return Wisdom;
+	}
+	public int getChar(){
+		return Charisma;
+	}
+	public void setStrength(int x){
+		Strength = x;
+	}
+	public void setDex(int x){
+		Dexterity = x;
+	}
+	public void setCon(int x){
+		Constitution = x;
+	}
+	public void setInt(int x){
+		Intelligence = x;
+	}
+	public void setWisdom(int x){
+		Wisdom = x;
+	}
+	public void setChar(int x){
+		Charisma = x;
+	}
+	public void printStats(){
+		for(int i = 0; i < )
+	}
+}

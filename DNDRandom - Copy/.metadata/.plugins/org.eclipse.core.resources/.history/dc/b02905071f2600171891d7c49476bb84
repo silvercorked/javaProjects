@@ -1,0 +1,9 @@
+package org.wissing.CharacterRandomization;
+
+public class Elf extends Classes {
+
+	public DragonBorn(String r, String c, String bg, String a, int[] st){
+		Statistics = st;
+		this.printStats();
+	}
+}

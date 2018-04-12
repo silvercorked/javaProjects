@@ -1,0 +1,18 @@
+package org.wissing.CharacterRandomization;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		randomizer alex = new randomizer();
+		
+		String r = alex.getRace();
+		String c = alex.getClasss();
+		String a = alex.getAlign();
+		String bg = alex.getBG();
+		if(r.contains("Dwarf")){
+			Dwarf a = new Dwarf()
+		}
+
+	}
+
+}
